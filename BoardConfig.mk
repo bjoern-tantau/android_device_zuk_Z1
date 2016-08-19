@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/zuk/Z1/BoardConfigVendor.mk
+-include vendor/zuk/ham/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -10,12 +10,12 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := krait
 
-TARGET_BOOTLOADER_BOARD_NAME := Z1
+TARGET_BOOTLOADER_BOARD_NAME := ham
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b6 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 vmalloc=480M
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --dt device/zuk/Z1/dt.img
+BOARD_MKBOOTIMG_ARGS := --dt device/zuk/ham/dt.img
 
 DEVICE_RESOLUTION := 1080x1920
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -38,4 +38,4 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 59700045414
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/zuk/Z1/kernel
+TARGET_PREBUILT_KERNEL := device/zuk/ham/kernel
